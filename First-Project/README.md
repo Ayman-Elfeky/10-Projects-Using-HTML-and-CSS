@@ -1,6 +1,6 @@
 # Automotive Car
 
-A simple website template for a car repair and service business. This project provides a clean and modern layout, helping users learn about services, book appointments, and contact the company.
+A simple website template for a car repair business. This project provides a clean and modern layout, helping users learn about services, book appointments, and contact the company.
 
 ---
 
