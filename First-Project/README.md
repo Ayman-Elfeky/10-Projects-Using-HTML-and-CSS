@@ -34,9 +34,3 @@ A simple website template for a car repair and service business. This project pr
 - **Font Awesome**: For adding icons to improve the UI.
 
 ---
-
-## Preview
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/automotive-car.git
