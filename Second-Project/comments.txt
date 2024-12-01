@@ -1,3 +1,4 @@
+@import url('./../Task/lec 1/demo/reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
@@ -55,12 +56,15 @@ nav ul {
 }
 
 nav li {
+    /* flex will stretch the parts equally so the width of each li will increase to fill the remaining space*/
+    /* flex-grow will take 1  & flex-shrink will take 1 & flex-basis will take auto */
     flex: auto;   
 }
 
 nav ul li a{
     background-color: #2d99A4;
     padding: 1rem 2rem;
+    /* with flex: 1;   this will inherit the width of its parent li so will fill the spaces between li*/
     display: block;  
     text-align: center;
     transition: 0.3s;
@@ -83,6 +87,7 @@ nav a:hover {
 .content {
     display: flex;
     flex-direction: column;
+    /* understand this why the h1 shrink after it was take all the width */
     align-items: flex-start;  
     font-size: 2rem;
     margin-top: 5rem;
@@ -94,6 +99,7 @@ nav a:hover {
     display: inline-block;
     padding: 1rem;
     font-weight: 200;
+    /* margin-bottom: 10px; */
 }
 
 .white-link {
@@ -101,11 +107,8 @@ nav a:hover {
     color: #2d99A4;
     padding: 1rem;
     border-radius: 10px;
-    transition: 0.3s;
-}
-
-.white-link:hover {
-    background-color: rgb(196, 195, 195);
+    /* with h1 */
+    /* margin-bottom: 10px; */
 }
 
 .teal-link {
@@ -114,11 +117,6 @@ nav a:hover {
     padding: 1rem;
     margin-top: 1.2rem;
     border-radius: 10px;
-    transition: 0.3s;
-}
-
-.teal-link:hover {
-    background-color: #026E78;
 }
 
 @media screen and (max-width: 800px) {
@@ -126,6 +124,12 @@ nav a:hover {
         flex-direction: column;
         justify-content: center;
     }
+
+    /* another approach for the responsive 
+    nav ul{
+        flex-direction: column; 
+    }
+    */
 
     .content {
         font-size: 1.5rem;
