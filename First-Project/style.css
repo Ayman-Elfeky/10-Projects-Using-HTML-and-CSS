@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-image: url('imgs/car-bg.avif');
+    color: white;
+    min-height: calc(100vh - 104px);
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 100%;
+    width: 900px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    margin-left: -50px;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+nav li a:hover {
+    background-color: #00c2ff;
+}
+
+header .content {
+    font-size: 1.5rem;
+    margin: auto;
+    max-width: 100%;
+}
+
+.content h1 {
+    color: #00c2ff;
+    margin-bottom: 0;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #00c2ff;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.highlight:hover {
+    background-color: #0383aa;
+}
+
+footer {
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    border-top: 2px solid #00c2ff;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer strong {
+    color: #00c2ff;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 920px) {
+    header .content .container {
+        padding-left: 1rem;
+    }
+
+    .content h1{
+        font-size: 2.5rem;
+        margin: 2rem auto 0;
+    }
+
+    header .content .container {
+        padding-left: 1rem;
+        max-width: 90%;
+    }
+
+    nav .logo {
+        margin-left: 0;
+    }
+
+    nav .highlight {
+        display: none;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    footer ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    footer li {
+        margin: 1rem;
+        text-align: center;
+    }
+}
