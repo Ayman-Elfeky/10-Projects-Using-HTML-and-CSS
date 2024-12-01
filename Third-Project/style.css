@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cb021c;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: background 0.4s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    font-size: 2rem;
+}
+
+.phone {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+}
+
+.logo {
+    color: white;   
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.logo i {
+    font-size: 3rem;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.logo p {
+    margin: 0;
+    font-weight: bold;
+    color: #40020e;
+}
+
+.carousel-container {
+    /* overflow: hidden; */
+    position: relative;
+    /* findout how */
+    height: 90vh;
+    width: 100vw;
+    margin-top: 4rem;
+}
+
+.carousel {
+    display: flex;
+    /* why when we make it absolute the childs disappeared */
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* search what does it mean */
+    transform: translateX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+    /* position: absolute; */
+    text-align: center;
+    width: 100vw;
+}
+
+.slide img {
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+}
+
+.slide h1 {
+    color: white;
+    font-size: 3rem;
+    margin-top: -0.5rem;
+}
+
+.slide a {
+    background-color: #40020e;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.arrow {
+    cursor: pointer;
+    /* search */
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 20%;
+    /* search */
+    /* transform: translateY(-50%); */
+    font-size: 4rem;
+    color: black;
+    opacity: 0.5;;
+}
+
+.left-arrow {
+    left: 2rem;
+}
+
+.right-arrow {
+    right: 2rem;
+}
