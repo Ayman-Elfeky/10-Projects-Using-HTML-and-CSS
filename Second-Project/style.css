@@ -1,0 +1,133 @@
+@import url('./../Task/lec 1/demo/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-image: url('imgs/rice-eggplant-plate-marble-table.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+nav {
+    padding: 0.5rem 0;
+}
+
+.pre-nav {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #026E78;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    /* flex will stretch the parts equally so the width of each li will increase to fill the remaining space*/
+    /* flex-grow will take 1  & flex-shrink will take 1 & flex-basis will take auto */
+    flex: auto;   
+}
+
+nav ul li a{
+    background-color: #2d99A4;
+    padding: 1rem 2rem;
+    /* with flex: 1;   this will inherit the width of its parent li so will fill the spaces between li*/
+    display: block;  
+    text-align: center;
+    transition: 0.3s;
+}
+
+nav a.active {
+    background-color: #fff;
+    color: #026E78;
+}
+
+nav a.highlight {
+    background-color: #026E78;
+    color: #fff;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    /* understand this why the h1 shrink after it was take all the width */
+    align-items: flex-start;  
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.content h1 {
+    background-color: #026E78;
+    color: white;
+    display: inline-block;
+    padding: 1rem;
+    font-weight: 200;
+    /* margin-bottom: 10px; */
+}
+
+.white-link {
+    background-color: white;
+    color: #2d99A4;
+    padding: 1rem;
+    /* with h1 */
+    /* margin-bottom: 10px; */
+}
+
+.teal-link {
+    color: white;
+    background-color: #2d99A4;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .pre-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* another approach for the responsive 
+    nav ul{
+        flex-direction: column; 
+    }
+    */
+
+    .content {
+        font-size: 1.5rem;
+    }
+}
