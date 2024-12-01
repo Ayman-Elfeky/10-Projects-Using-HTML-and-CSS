@@ -1,7 +1,7 @@
 # Automotive Car
 
 This is a simple website template for a car repair and service business. It provides a clean and modern layout for users to learn about the services, book appointments, and contact the company.
-![LOGO](imgs/rb_2149460685.png)
+![LOGO](imgs/Automotive-Web.png)
 
 ## Features
 
