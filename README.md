@@ -6,7 +6,7 @@ This repository contains 10 projects created using HTML and CSS. These projects 
 1. **Automative Car Website** - A car pair store website with responsive design.
 2. **Restaurant Website** - A restaurant website with a responsive design.
 3. **Footwear website** - A modern footwear store website with a responsive design.
-4. 
+4. **Fashion Style Website** - A modern Fashion Style Website with a responsive design.
 5. 
 6. 
 7. 
