@@ -1,0 +1,124 @@
+:root {
+    --box-color: #404040;
+    --dark-box-color: #202020;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    padding-left: 0;
+    display: flex;
+    height: 100vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 60%;
+}
+
+aside {
+    width: 40%;
+}
+
+.box {
+    background-color: var(--box-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.dark-box {
+    background-color: var(--dark-box-color);
+    margin-bottom: 6.8rem;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 35px;
+    color: black;
+    display: inline-flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    margin-right: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+h3 {
+    color: #6f6f6f;
+    font-size: 1rem;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.text {
+    width: 300px;
+}
+
+.arrow {
+    font-size: 3rem;
+}
+
+aside img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-right: 0;
+    }
+
+    aside img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    aside img {
+        height: 69%;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        height: 60px;
+        width: 80px;
+        font-size: 1.5rem;
+    } 
+}
