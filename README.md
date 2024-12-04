@@ -11,8 +11,8 @@ This repository contains 10 projects created using HTML and CSS. These projects 
 6. **News Magazine** - A modern News Magazine website with a responsive design.
 7. **Legal Law** - A modern Legal Law website with a responsive design.
 8. **TV Video Streaming** - A modern video streaming website with a responsive design.
-9. 
-10. 
+9. **Technology Website** - A modern Technology website with a responsive design.
+10. **Tourism Website** - A modern Tourism website with a responsive design.
 
 ## Features
 - Fully responsive designs.
