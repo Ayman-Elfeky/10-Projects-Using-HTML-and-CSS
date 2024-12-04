@@ -6,7 +6,7 @@ A simple website template for a magagazine. This project provides a clean and mo
 
 ## Screenshot
 
-![ScreenShot]('./imgs/NewsMagazine.png')  
+![ScreenShot](./imgs/NewsMagazine.png)  
 *Homepage showcasing the News Magazine's features and layout.*
 
 ---
