@@ -8,7 +8,7 @@ This repository contains 10 projects created using HTML and CSS. These projects 
 3. **Footwear website** - A modern footwear store website with a responsive design.
 4. **Fashion Style Website** - A modern Fashion Style Website with a responsive design.
 5. **Tourism Landscape** - A modern Tourism website with a responsive design.
-6. 
+6. **News Magazine** - A modern News Magazine website with a responsive design.
 7. 
 8. 
 9. 
