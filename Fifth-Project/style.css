@@ -1,0 +1,127 @@
+:root {
+    --special: #feab51;
+    --dark-special: #9c6a34;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-image: url('./imgs/bg (1).png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 50vh;
+    font-family: serif;
+}
+
+aside {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 100vh;
+    padding: 2rem;
+    transition: 0.5s;
+}
+
+aside ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+aside a {
+    display: inline-block;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    margin: 0.3rem;
+    transition: 0.3s;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+aside a:hover {
+    background-color: var(--special);
+    color: black;
+}
+
+.special {
+    background-color: var(--special);
+    color: black;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.special:hover {
+    background-color: var(--dark-special);
+}
+
+main {
+    color: white;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+main h1 {
+    margin: 0;
+}
+
+main h3 {
+    color: var(--special);
+}
+
+.bars { 
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    padding: 3rem;
+    cursor: pointer;
+}
+
+#open {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    aside {
+        display: none;
+        width: 100vw;
+    }
+
+    .special {
+        width: 40%;
+    }
+
+    main {
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50vh;
+    }
+
+    main h3 {
+        text-shadow: 5px 3px black;
+    }
+
+    #open{
+        display: block;
+    }
+}
